@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/pages/checkout/checkout-header.css">
+    <link rel="stylesheet" href="styles/pages/checkout/checkout.css">
+  </head>
+  <body>
+    <!-- Checkout sayfasının üst kısmındaki başlık bölümü -->
+    <div class="checkout-header">
+      <div class="header-content">
+        <!-- Başlık bölümünün sol kısmı -->
+        <div class="checkout-header-left-section">
+          <a href="amazon.html">
+            <!-- Amazon logosu -->
+            <img class="amazon-logo" src="images/amazon-logo.png">
+            <img class="amazon-mobile-logo" src="images/amazon-mobile-logo.png">
+          </a>
+        </div>
+
+        <!-- Başlık bölümünün orta kısmı -->
+        <div class="checkout-header-middle-section">
+          Checkout (<a class="return-to-home-link"
+            href="amazon.html">3 items</a>)
+        </div>
+
+        <!-- Başlık bölümünün sağ kısmı -->
+        <div class="checkout-header-right-section">
+          <img src="images/icons/checkout-lock-icon.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- Ana içerik bölümü -->
+    <div class="main">
+      <!-- Sayfa başlığı -->
+      <div class="page-title">Review Your Order</div>
+
+      <!-- Checkout sayfasının grid düzeni -->
+      <div class="checkout-grid">
+        <!-- Sipariş özeti -->
+        <div class="order-summary js-order-summary">
+        </div>
+
+        <!-- Ödeme özeti -->
+        <div class="payment-summary">
+          <div class="payment-summary-title">
+            Order Summary
+          </div>
+
+          <!-- Ürünler toplamı -->
+          <div class="payment-summary-row">
+            <div>Items (3):</div>
+            <div class="payment-summary-money">$42.75</div>
+          </div>
+
+          <!-- Kargo ve işleme ücreti -->
+          <div class="payment-summary-row">
+            <div>Shipping & Handling:</div>
+            <div class="payment-summary-money">$4.99</div>
+          </div>
+
+          <!-- Vergi öncesi toplam -->
+          <div class="payment-summary-row subtotal-row">
+            <div>Total before tax:</div>
+            <div class="payment-summary-money">$47.74</div>
+          </div>
+
+          <!-- Tahmini vergi -->
+          <div class="payment-summary-row">
+            <div>Estimated tax (10%):</div>
+            <div class="payment-summary-money">$4.77</div>
+          </div>
+
+          <!-- Sipariş toplamı -->
+          <div class="payment-summary-row total-row">
+            <div>Order total:</div>
+            <div class="payment-summary-money">$52.51</div>
+          </div>
+
+          <!-- Sipariş ver butonu -->
+          <button class="place-order-button button-primary">
+            Place Your Order
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript dosyası bu satırda yüklenir. -->
+    <script type="module" src="scripts/checkout.js"></script>
+  </body>
+</html>
